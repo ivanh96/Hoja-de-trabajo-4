@@ -4,18 +4,18 @@ import java.util.*;
 /**
  * 
  */
-public class SingleLinkedList[E] extends AbstractList {
+public class SingleLinkedList<E> extends AbstractList {
 
     /**
      * 
      */
-    public SingleLinkedList[E]() {
+    public SingleLinkedList<E>() {
     }
 
     /**
      * 
      */
-    private Node[E] head;
+    private Node<E>head;
 
     /**
      * 
