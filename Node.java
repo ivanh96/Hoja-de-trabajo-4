@@ -4,12 +4,12 @@ import java.util.*;
 /**
  * 
  */
-public class Node[E] {
+public class Node<E> {
 
     /**
      * 
      */
-    public Node[E]() {
+    public Node<E>() {
     }
 
     /**
