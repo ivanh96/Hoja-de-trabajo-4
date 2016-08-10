@@ -4,12 +4,12 @@ import java.util.*;
 /**
  * 
  */
-public class IStack[E] {
+public class IStack<E> {
 
     /**
      * 
      */
-    public IStack[E]() {
+    public IStack<E>() {
     }
 
     /**
