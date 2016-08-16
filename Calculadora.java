@@ -109,8 +109,43 @@ public class Calculadora
     
     public int postfixConListas(String readItem)
     {
-        int resultado = 0;
-        //Progrmacion para realizar los calculos Postfix con Listas
-        return resultado;
-    } 
+
+    for(int i = 0; i < readItem.length(); i++){
+        
+    char c = readItem.charAt(i);
+    int a = 0;
+    int b = 0;
+    int r = 0;
+
+    if(Character.isDigit(c)){
+       int t = Character.getNumericValue(c);
+        lista.addLast(t);
+    }
+    else if(c == '+'){
+        a = (Integer)lista.removeLast();
+        b = (Integer)lista.removeLast();
+        r = a+b;
+        lista.addLast(r);
+    }
+     else if(c == '-'){
+        a = (Integer)lista.removeLast();
+        b = (Integer)lista.removeLast();
+        r = a-b;
+        lista.addLast(r);
+    }
+     else if(c == '*'){
+        a = (Integer)lista.removeLast();
+        b = (Integer)lista.removeLast();
+        r = a*b;
+        lista.addLast(r);
+    }
+     else if(c == '/'){
+        a = (Integer)lista.removeLast();
+        b = (Integer)lista.removeLast();
+        r = a/b;
+        lista.addLast(r);
+    }
+}
+        return (Integer)lista.removeLast();
+    }
 }
