@@ -1,64 +1,28 @@
+/**--------------------------------------
+ * Universidad del Valle de Guatemala
+ * Algoritmos y Estructura de Datos 
+ * Seccion 10
+ * -------------------------------------
+ * Marlon Hernandez 15177
+ * Dieter de Wit 15146
+ * -------------------------------------
+ * Clase que contiene los metodos para
+ * utilizar la pila. 
+ --------------------------------------*/
 
-import java.util.*;
+public interface IStack<E> 
+{
+    public void push(E element);
 
-/**
- * 
- */
-public class IStack<E> {
+    public E pop();
 
-    /**
-     * 
-     */
-    public IStack<E>() {
-    }
+    public boolean isEmpty();
 
-    /**
-     * @param element 
-     * @return
-     */
-    public void push(E element) {
-        // TODO implement here
-        return null;
-    }
+    public E getLast();
 
-    /**
-     * @return
-     */
-    public E pop() {
-        // TODO implement here
-        return null;
-    }
+    public int size();
 
-    /**
-     * @return
-     */
-    public boolean isEmpty() {
-        // TODO implement here
-        return false;
-    }
+    public void clear();
 
-    /**
-     * @return
-     */
-    public E getLast() {
-        // TODO implement here
-        return null;
-    }
-
-    /**
-     * @return
-     */
-    public int size() {
-        // TODO implement here
-        return 0;
-    }
-
-    /**
-     * @return
-     */
-    public void clear() {
-        // TODO implement here
-        return null;
-    }
-
+	E peek();
 }
